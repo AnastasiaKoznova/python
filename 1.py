@@ -2,5 +2,5 @@
 
 N=int(input('Ввеите число'))
 print(N)
-for i in range (-N+1,N+1):
+for i in range (-N,N+1):
     print(i)
