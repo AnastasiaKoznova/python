@@ -2,5 +2,15 @@
 
 N=int(input('Ввеите число'))
 print(N)
-for i in range (-N,N+1):
+for i in range (-N,N+1):  
     print(i)
+
+#2 вариант решения
+
+N=int(input('Ввеите число'))
+ListInt=[]       # задаем пустой список
+i=-N             #приравниваем переменную к минимальному значению 
+while i<=N:           
+    ListInt.append(i) #Append -добавляет новый элемент в конце списка
+    i+=1               # += -сложение с присваиванием 
+print(ListInt)
