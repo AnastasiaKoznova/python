@@ -7,5 +7,14 @@
 
 
 
-Number=float(input('Введите вещественное число'))
-Number=insdigi
+
+
+
+Number=input('Введите вещественное число')
+sum=0
+for i in Number: #перебираем циклом введенное число
+    if i.isdigit(): #если символ из переборки является цифрой
+        sum=sum+int(i) #обязательно переводим в int
+print(sum)
+
+
