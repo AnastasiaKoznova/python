@@ -3,3 +3,12 @@
 
 # пусть N = 4, тогда [ 1, 2, 6, 24 ] (1, 1*2, 1*2*3, 1*2*3*4)
 
+N=int(input("Введите число")) #int для введения целого числа
+def array(number):
+    list=[]
+    first=1
+    for i in range (1, number+1): #от 1 потому что при умножении на 0 всегда будет 0
+        list.append(i*first)
+        first*=i
+    return list
+print(array(N))
