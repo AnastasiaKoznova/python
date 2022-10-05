@@ -4,7 +4,8 @@ my_list = []
 for i in range(n):
     my_list.append(i)
 print(my_list)
-newList = []
-for i in range((len(my_list) + 1) // 2):
-    newList += [int(my_list[i]) * int(my_list[-i-1])]
+newList = [] #создаем новый список
+for i in range((len(my_list) + 1) // 2): #двигаемся с шагом +1, делим список на 2 равные части
+    newList += [int(my_list[i]) * int(my_list[-i-1])] #добавляем к списку новые значения из списка.(+=)
+                                                      #перемножаем 1 символ с начала и первый с конца
 print(f'Произведение пар чисел списка = {newList}')
