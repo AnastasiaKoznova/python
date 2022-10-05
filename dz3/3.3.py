@@ -3,9 +3,9 @@
 
 list=[1.1, 1.2, 3.1, 5, 10.01]
 print(list)
-max_number=max(list)
-print("Наибольшее число из списка:", max_number)
-min_number=min(list)
-print("Наименьшее число из списка:",min_number)
-A=(max_number%1)- (min_number%1)
-print("Разницу между максимальным и минимальным значением дробной части элементов", "=",A)
+new_list=[round(i%1,2) for i in list if i%1 !=0]
+print(new_list)
+print("разница между максимальным и минимальным значением дробной части элементов","=",(max(new_list)-min(new_list)))
+
+
+  
